@@ -1,14 +1,3 @@
-document.getElementById("search-icon").addEventListener("click", function (event) {
-    let searchBar = document.getElementById("searchbar-box");
-
-    // Show the search bar
-    searchBar.style.display = "inline-block";  
-    searchBar.focus();
-
-    // Stop the click from bubbling up to the document
-    event.stopPropagation();
-});
-
 // Listen for clicks on the whole document
 document.addEventListener("click", function (event) {
     let searchContainer = document.getElementById("searchbar-box");

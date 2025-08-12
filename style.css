@@ -198,74 +198,7 @@ li {
 .search-icon-btn span {
     font-size: 24px;
 }
-.searchbar-box-margin {
-    width: 900px;
-    position: absolute;
-    top: 160%;
-    left: -790px;
-    z-index: 190;
-    border-radius: 8px;
-    display: none;
-    transition: opacity 0.3s ease;
-}
-.searchbar-box-padding {
-    border-radius: 12px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3), 0 8px 12px 6px rgba(0, 0, 0, .15);
-    overflow-y: auto;
-    overscroll-behavior: none;
-    max-width: calc(100vw - 60px);
-    max-height: calc(550px);
-    display: flex;
-    flex-direction: row;
-    background: #191d24;
-}
-.searchbar-box-padding::before {
-    -webkit-backdrop-filter: blur(16px);
-    backdrop-filter: blur(16px);
-    background: rgba(25, 30, 37, .8);
-    border-radius: 12px;
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-}
-.searchbar-hold {
-    border-radius: 8px;
-    width: 100%;
-    padding: 30px;
-    position: relative;
-    margin: 12px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.searchbar-hold span {
-    color:#bebfc1;
-    position: absolute;
-    display: flex;
-    left: 45px;
-    font-size: 32px;
-}
-.searchbar-hold input {
-    width: 100%;
-    height: 50px;
-    border-radius: 8px;
-    background-color: #33373d;
-    border: none;
-    box-shadow: none;
-    color: #bebfc1;
-    font-size: 19px;
-    font-weight: 700;
-    letter-spacing: .02em;
-    line-height: 22px;
-    transition: none;
-    padding-left: 60px;
-    outline: none;
-}
+
 /*----language icon---*/
 
 .language-div button {

@@ -218,7 +218,10 @@ li {
 .language-div button:hover .errow-span{
     rotate: 180deg;
 }
-article {
+.language-div:hover .lang-box{
+    visibility: visible;
+}
+.lang-box {
     display: flex;
     position: absolute;
     width: 15vw;
@@ -230,9 +233,11 @@ article {
     background: rgba(25, 30, 37, .8);
     border-radius: 10px;
     padding: 0.2rem 0 0 1rem;
-        transition: opacity .2s;
+    transition: opacity .2s;
+     z-index: 190;
+    visibility: hidden;
 }
-article ul {
+.lang-box ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -240,13 +245,18 @@ article ul {
     flex-wrap: wrap;
     align-items: center;
 }
-article li {
+.lang-box li {
     font-size: 1rem;
-    border: 1px solid #fff;
     padding: 0.4rem;
     cursor:pointer;
+    border-radius: 7px;
 }
-article::after {
+.lang-box li:hover {
+        background-color: hsla(0, 0%, 100%, 0.932);
+    color: #00050d !important;
+    box-shadow: 0px -2px 20px 0 rgba(255, 255, 255, 0.19);
+}
+.lang-box::after {
         content: "";
     position: absolute;
     top: -1rem; /* Extends the hover area downward */
